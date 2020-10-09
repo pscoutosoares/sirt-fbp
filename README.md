@@ -6,7 +6,7 @@
 ## Enviroment
 Make sure to have anaconda installed and import enviroment from condaEnviroment.yml file. 
 
-Just use the command `conda env create --file envname.yml`
+Then, use the command `conda env create --file envname.yml`
 
 ## Run
 1. Open sirtfbp.py file and set PATH variable with dataset location
