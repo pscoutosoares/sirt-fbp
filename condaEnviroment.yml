@@ -1,0 +1,5 @@
+name: ENVNAME
+channels:
+  - defaults
+prefix: /home/pedro/anaconda3/envs/ENVNAME
+
