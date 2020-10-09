@@ -3,4 +3,5 @@ test
 validation
 *.mat
 examples
-.ideia
+.idea
+__pycache__
