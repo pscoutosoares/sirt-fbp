@@ -1,0 +1,6 @@
+train
+test
+validation
+*.mat
+examples
+.ideia
