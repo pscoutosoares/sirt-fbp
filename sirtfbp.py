@@ -12,6 +12,10 @@ import os
 # precomputed filter is found)
 import sirtfilter
 
+####change HERE#####
+PATH = '../data/'
+##########
+
 nd = 513 # Number of detector pixels
 ang = np.linspace(0, np.pi, 1000, False) # Projection angles
 
@@ -37,7 +41,7 @@ for step in ['train','test','validation']:
     else:
         print("Successfully created the directory %s " % step)
     index = 0
-    for step_path in sorted(glob.glob('../data/observation_'+step+'_*.hdf5')):
+    for step_path in sorted(glob.glob(PATH + 'observation_'+step+'_*.hdf5')):
         print(step_path)
         with h5py.File(step_path, "r") as f:
             # List all groups

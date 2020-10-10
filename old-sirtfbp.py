@@ -33,7 +33,7 @@ import sirtfilter
 filter_file = sirtfilter.getfilterfile(nd, ang, 100, filter_dir='./')
 
 # Register SIRT-FILTER plugin with ASTRA
-astra.plugin.register(sirtfilter.astra_plugin)
+astra.plugin.register(sirtfilter.astra_plugin)em de
 
 # Print help message to screen
 print(astra.plugin.get_help('SIRT-FBP'))

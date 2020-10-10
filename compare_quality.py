@@ -6,13 +6,13 @@ import h5py
 import glob
 import pylab as pl
 import os
-
+PATH = '../data/
 ssim = {'train': [], 'test': [], 'validation': []}
 psnr = {'train': [], 'test': [], 'validation': []}
 for step in ['train']:
     print(step)
     index = 0
-    for step_path in sorted(glob.glob('../data/ground_truth_'+step+'_*.hdf5')):
+    for step_path in sorted(glob.glob(PATH + 'ground_truth_'+step+'_*.hdf5')):
         print(step_path)
         with h5py.File(step_path, "r") as f:
             # List all groups
